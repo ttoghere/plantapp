@@ -5,3 +5,6 @@ export './title_w_button.dart';
 export './body.dart';
 export './recom_pc.dart';
 export './recom_products.dart';
+export './featured_plant_card.dart';
+export './featured_plants.dart';
+export '../../../components/custom_bottom_nav.dart';

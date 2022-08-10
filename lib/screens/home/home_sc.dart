@@ -1,5 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:plantapp/conts.dart';
 import 'package:plantapp/screens/home/components/home_components.dart';
 
 class HomeSC extends StatefulWidget {
@@ -12,9 +14,10 @@ class HomeSC extends StatefulWidget {
 class _HomeSCState extends State<HomeSC> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: BuildAppBar(),
-      body: Body(),
+    return Scaffold(
+      appBar: const BuildAppBar(),
+      body: const Body(),
+      bottomNavigationBar: CustomBottomNav(),
     );
   }
 }

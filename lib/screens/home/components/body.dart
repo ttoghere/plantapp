@@ -1,5 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
+import 'package:plantapp/conts.dart';
 import 'package:plantapp/screens/home/components/home_components.dart';
 
 class Body extends StatelessWidget {
@@ -17,9 +19,12 @@ class Body extends StatelessWidget {
         children: [
           SearchHeader(size: size),
           TitleWButton(title: "Recommended", onpress: () {}),
-          // It will cover %40 of width
           const RecomProducts(),
-          TitleWButton(title: "Featured", onpress: () {})
+          TitleWButton(title: "Featured", onpress: () {}),
+          const FeaturedPlants(),
+          const SizedBox(
+            height: kDefaultPadding,
+          )
         ],
       ),
     );
